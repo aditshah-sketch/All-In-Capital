@@ -52,3 +52,10 @@ test("HTTP errors surface the status without echoing the request", async () => {
   const fake = (async () => new Response("quota", { status: 429 })) as unknown as typeof fetch;
   await assert.rejects(geminiProvider("k", fake).chat({ model: "m", messages: [{ role: "user", content: "SECRET DECK TEXT" }], temperature: 0, maxTokens: 1 }), (e: Error & { status?: number }) => e.status === 429 && !e.message.includes("SECRET"));
 });
+
+test("a hung request times out as a retryable 504", async () => {
+  const hang = ((_u: string, init: RequestInit) => new Promise((_r, rej) => {
+    init.signal?.addEventListener("abort", () => rej(init.signal?.reason));
+  })) as unknown as typeof fetch;
+  await assert.rejects(geminiProvider("k", hang, { timeoutMs: 20 }).chat({ model: "m", messages: [], temperature: 0, maxTokens: 1 }), (e: Error & { status?: number }) => e.status === 504);
+});

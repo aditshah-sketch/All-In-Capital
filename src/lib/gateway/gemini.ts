@@ -56,14 +56,24 @@ export function geminiSchema(schema: unknown): unknown {
 export function geminiProvider(
   apiKey: string,
   fetchFn: FetchFn = fetch,
-  opts: { embedDims?: number; reasoningEffort?: "none" | "low" | "medium" | "high" } = {},
+  opts: { embedDims?: number; reasoningEffort?: "none" | "low" | "medium" | "high"; timeoutMs?: number } = {},
 ): Provider {
   const embedDims = opts.embedDims ?? 1536;
+  const timeoutMs = opts.timeoutMs ?? 90_000;
   const base = "https://generativelanguage.googleapis.com/v1beta/openai";
   const headers = { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` };
 
   async function post(path: string, payload: unknown): Promise<GeminiJson> {
-    const res = await fetchFn(`${base}${path}`, { method: "POST", headers, body: JSON.stringify(payload) });
+    // A hung request must not stall the queue: abort, and let withRetry treat it as retryable.
+    let res: Response;
+    try {
+      res = await fetchFn(`${base}${path}`, {
+        method: "POST", headers, body: JSON.stringify(payload), signal: AbortSignal.timeout(timeoutMs),
+      });
+    } catch (e) {
+      if ((e as Error).name === "TimeoutError") throw new HttpError(504, `Gemini timed out after ${timeoutMs} ms`);
+      throw e;
+    }
     if (!res.ok) {
       // Never echo the request (it carries application text).
       const text = (await res.text().catch(() => "")).slice(0, 200);

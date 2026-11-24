@@ -30,6 +30,7 @@ async function post(fetchFn: FetchFn, url: string, headers: Record<string, strin
     method: "POST",
     headers: { "Content-Type": "application/json", ...headers },
     body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(90_000),
   });
   if (!res.ok) {
     // Never echo the request (it carries founder data); keep the provider's message short.
