@@ -1,0 +1,33 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A02
+Submitted: 2026-11-04
+Company: LedgerLoop
+Website: https://ledgerloop.example.com
+City: Pune
+One-liner: Accounts-payable automation that reads, matches and pays supplier invoices for mid-size manufacturers.
+Sector: B2B SaaS
+Stage: Seed
+First institutional round: Yes
+Round size: ₹8 Cr
+Pre-money valuation: ₹40 Cr
+Post-money valuation: ₹48 Cr
+Team size: 9
+Monthly revenue: ₹6 L
+Annual recurring revenue: ₹72 L
+Customers: 31 manufacturers
+Founder 1 name: Meera Joshi
+Founder 1 email: meera@ledgerloop.example.com
+Founder 1 phone: +91 90000 10201
+Founder 1 LinkedIn: https://www.linkedin.com/in/meera-joshi-ap
+Founder 1 role: CEO
+Founder 1 background: Chartered accountant; finance controller at an auto-components manufacturer (2014-2022) running a 40-person AP team; then finance transformation consultant (2022-2024).
+Founder 2 name: Aniket Deshpande
+Founder 2 email: aniket@ledgerloop.example.com
+Founder 2 phone: +91 90000 10202
+Founder 2 LinkedIn: https://www.linkedin.com/in/aniket-deshpande-eng
+Founder 2 role: CTO
+Founder 2 background: Engineering lead at a mid-market ERP software company (2015-2023), owned the procurement and invoicing modules.
+Traction: 31 paying manufacturers, ARR of ₹72 L as of Oct 2026, net revenue retention 118%. Customers process 46,000 invoices a month through LedgerLoop.
+Why now: E-invoicing thresholds now cover most suppliers of mid-size manufacturers, so structured invoice data is finally available to automate against.
+Biggest risk: Long sales cycles (about 70 days) with plant finance heads could slow us before we build a partner channel.
+How did you hear about us: Met the partners at a Pune SaaS meetup

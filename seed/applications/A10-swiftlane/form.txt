@@ -1,0 +1,33 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A10
+Submitted: 2026-11-20
+Company: SwiftLane
+Website: https://swiftlane.example.com
+City: Gurugram
+One-liner: Transport management software that plans, tenders and tracks every truck for mid and large shippers.
+Sector: B2B SaaS
+Stage: Series A
+First institutional round: No
+Round size: ₹45 Cr
+Pre-money valuation: ₹165 Cr
+Post-money valuation: ₹210 Cr
+Team size: 74
+Monthly revenue: ₹1.17 Cr
+Annual recurring revenue: ₹14 Cr
+Customers: 68 enterprise shippers
+Founder 1 name: Vikram Sehgal
+Founder 1 email: vikram@swiftlane.example.com
+Founder 1 phone: +91 90000 11001
+Founder 1 LinkedIn: https://www.linkedin.com/in/vikram-sehgal-logistics
+Founder 1 role: CEO
+Founder 1 background: Head of operations at a third-party logistics company (2012-2020), ran a fleet network of 4,000 trucks; co-founded SwiftLane in 2021.
+Founder 2 name: Neha Bansal
+Founder 2 email: neha@swiftlane.example.com
+Founder 2 phone: +91 90000 11002
+Founder 2 LinkedIn: https://www.linkedin.com/in/neha-bansal-eng
+Founder 2 role: CTO
+Founder 2 background: Engineering director at an enterprise SaaS company (2011-2021), led a 60-person platform team.
+Traction: ARR grew from ₹5.2 Cr in Oct 2025 to ₹14 Cr in Oct 2026 across 68 enterprise shippers. Net revenue retention is 131% and gross margin is 78%. We raised a ₹6 Cr seed round in 2024.
+Why now: Shippers are consolidating freight spend onto software after GST and e-way bill data made lanes and rates measurable.
+Biggest risk: Enterprise sales hiring. We need to triple the sales team without diluting win rates.
+How did you hear about us: Inbound from our seed investor's network

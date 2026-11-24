@@ -1,0 +1,33 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A01
+Submitted: 2026-11-02
+Company: PantryWise
+Website: https://pantrywise.example.in
+City: Bengaluru
+One-liner: A monthly grocery-staples subscription app that refills urban kitchens before they run out.
+Sector: Consumer tech
+Stage: Pre-seed
+First institutional round: Yes
+Round size: ₹2 Cr
+Pre-money valuation: ₹10 Cr
+Post-money valuation: ₹12 Cr
+Team size: 7
+Monthly revenue: ₹9 L
+Annual recurring revenue: Not applicable
+Customers: 2,100 subscribers
+Founder 1 name: Ritika Narang
+Founder 1 email: ritika@pantrywise.example.in
+Founder 1 phone: +91 90000 10101
+Founder 1 LinkedIn: https://www.linkedin.com/in/ritika-narang-pw
+Founder 1 role: CEO
+Founder 1 background: Category manager for staples at a quick-commerce startup (2019-2024); before that, buyer at a regional supermarket chain (2016-2019).
+Founder 2 name: Sandeep Kulkarni
+Founder 2 email: sandeep@pantrywise.example.in
+Founder 2 phone: +91 90000 10102
+Founder 2 LinkedIn: https://www.linkedin.com/in/sandeep-kulkarni-dev
+Founder 2 role: CTO
+Founder 2 background: Backend engineer and later engineering manager at a payments startup (2017-2024); built the recurring-billing system there.
+Traction: Monthly revenue grew from ₹4.1 L in Jul 2026 to ₹9 L in Oct 2026. We have 2,100 paying subscribers across 14 Bengaluru pin codes, and M3 retention is 46%.
+Why now: Urban households now trust app-based grocery, but quick commerce is priced for impulse top-ups, not planned monthly staples.
+Biggest risk: Quick-commerce players could launch a subscription tier and undercut us on price while we are still building density.
+How did you hear about us: Referred by a founder in the All In Capital portfolio

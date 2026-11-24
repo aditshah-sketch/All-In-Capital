@@ -1,0 +1,33 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A06
+Submitted: 2026-11-10
+Company: StockSaathi
+Website: https://stocksaathi.example.in
+City: Indore
+One-liner: An inventory and auto-reorder app for kirana stores that places distributor orders before shelves go empty.
+Sector: B2B SaaS
+Stage: Pre-seed
+First institutional round: Yes
+Round size: ₹2.5 Cr
+Pre-money valuation: ₹12.5 Cr
+Post-money valuation: ₹15 Cr
+Team size: 6
+Monthly revenue: ₹4.5 L
+Annual recurring revenue: ₹54 L
+Customers: 640 kirana stores
+Founder 1 name: Rohan Jain
+Founder 1 email: rohan@stocksaathi.example.in
+Founder 1 phone: +91 90000 10601
+Founder 1 LinkedIn: https://www.linkedin.com/in/rohan-jain-fmcg
+Founder 1 role: CEO
+Founder 1 background: Ran his family's FMCG distribution business in Indore serving 900 retailers (2016-2022); city operations manager at a B2B retail e-commerce company (2022-2025).
+Founder 2 name: Aarti Choudhary
+Founder 2 email: aarti@stocksaathi.example.in
+Founder 2 phone: +91 90000 10602
+Founder 2 LinkedIn: https://www.linkedin.com/in/aarti-choudhary-android
+Founder 2 role: CTO
+Founder 2 background: Android engineer at a vernacular social app (2018-2022); senior mobile engineer at a logistics startup (2022-2025).
+Traction: 640 paying kirana stores in Indore and Bhopal, ₹4.5 L MRR in Oct 2026, monthly logo churn of 3.5%. 22 distributors accept orders through the app.
+Why now: Kirana owners now run their counters on smartphones and UPI, and distributors want digital order books.
+Biggest risk: Churn. Small stores drop off in slow months, so we must prove value every month through fewer stock-outs.
+How did you hear about us: Applied after reading the fund's blog post on kirana tech

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "gates": {
+    "G1": { "name": "Stage and cheque", "stages": ["Pre-seed", "Seed"], "first_institutional": true, "max_round_inr": 100000000, "max_post_money_inr": 400000000, "method": "code" },
+    "G2": { "name": "Regulatory bet", "method": "model" },
+    "G3": { "name": "Portfolio conflict", "method": "vector", "always_flag_top_match_above": 0.35 },
+    "G4": { "name": "Numbers or claims don't match", "method": "both" }
+  },
+  "criteria": {
+    "C1": { "name": "Founder-market fit", "weight": 0.25, "covers": "Earned secrets, time in the field. Pedigree alone scores 0." },
+    "C2": { "name": "Risk ownership", "weight": 0.20, "covers": "Credit, regulation, capital path, liability." },
+    "C3": { "name": "Customer pull", "weight": 0.20, "covers": "Repeat, conversion, groundwork. Not raw size." },
+    "C4": { "name": "Numbers fluency", "weight": 0.15, "covers": "Cohorts, CAC by channel, figures that reconcile." },
+    "C5": { "name": "Pre-seed fit", "weight": 0.10, "covers": "Capital intensity, valuation, path to the next round." },
+    "C6": { "name": "Why now and copy risk", "weight": 0.10, "covers": "What changed, and the answer to a well-funded copier." }
+  },
+  "written_weights": { "C1": 0.35, "C2": 0.15, "C3": 0.10, "C4": 0.10, "C5": 0.10, "C6": 0.20 },
+  "lenses": {
+    "multiplier": 1.5,
+    "consumer_brand": { "boost": ["C3", "C4"], "question": "What is the repeat rate?" },
+    "lending_fintech": { "boost": ["C2"], "question": "Who owns the risk?" },
+    "deeptech": { "boost": ["C2", "C6"], "question": "Is there a milestone path?" }
+  },
+  "missing_evidence": { "score": 2, "confidence": "low" },
+  "thresholds": {
+    "take_call": 7.5,
+    "dig_first": 6.0,
+    "no_below": 4.5,
+    "lean_yes_at": 6.75
+  },
+  "anchors": {
+    "C1": { "0": "Pedigree only; no time in this market.", "3": "Adjacent experience; learned the problem second-hand.", "5": "Some years near the customer; one earned insight.", "7": "Years in the field; names a non-obvious truth with evidence.", "10": "Lived the problem for years and built the first version on that knowledge (Tadka Ghar, Dukaan Dost)." },
+    "C2": { "0": "Pushes the hardest risk onto a partner (QuickPaisa: defaults are the NBFC's problem).", "3": "Aware of the risk; no plan.", "5": "Plan exists but untested.", "7": "Owns the risk with data from the field.", "10": "Did groundwork before lending or building; owns losses (Mitti Credit)." },
+    "C3": { "0": "Only downloads or followers.", "3": "Revenue but no repeat number.", "5": "Repeat stated once, no cohorts.", "7": "Repeat by cohort holding above sector norm.", "10": "Cohort curves flatten high; customers pull the product (Boli Seekho, 34% M6)." },
+    "C4": { "0": "Numbers contradict each other.", "3": "Totals only; can't split by channel.", "5": "Some unit economics; gaps named.", "7": "CAC by channel, margins and cohorts that reconcile.", "10": "Knows every number and why it moved (Tadka Ghar)." },
+    "C5": { "0": "Needs far more capital than a pre-seed cheque before proof (Charge Chalo).", "3": "Expensive path; valuation stretched.", "5": "Fits with risk.", "7": "Clear milestones the cheque can reach.", "10": "Capital-light, fair price, clear next-round proof." },
+    "C6": { "0": "Depends on a rule change going its way (Chainmandi), or defensive about copiers (Ledgerline).", "3": "Generic why now.", "5": "A real shift, weak answer to copiers.", "7": "Specific shift and a credible moat.", "10": "Earned timing plus a structural answer to a well-funded copier (Pervalent milestones)." }
+  }
+}

@@ -1,0 +1,33 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A04
+Submitted: 2026-11-06
+Company: Sahukar Credit
+Website: https://sahukar.example.in
+City: Lucknow
+One-liner: Small-ticket working-capital loans for kirana owners in a few taps, lent by our NBFC partner.
+Sector: Fintech
+Stage: Pre-seed
+First institutional round: Yes
+Round size: ₹3.5 Cr
+Pre-money valuation: ₹16.5 Cr
+Post-money valuation: ₹20 Cr
+Team size: 8
+Monthly revenue: ₹5.6 L
+Annual recurring revenue: Not applicable
+Customers: 1,900 borrowers
+Founder 1 name: Aditya Srivastava
+Founder 1 email: aditya@sahukar.example.in
+Founder 1 phone: +91 90000 10401
+Founder 1 LinkedIn: https://www.linkedin.com/in/aditya-srivastava-growth
+Founder 1 role: CEO
+Founder 1 background: Growth lead at a food-delivery app (2018-2023), ran referral and city-launch campaigns; growth consultant to consumer apps (2023-2025).
+Founder 2 name: Nikita Agarwal
+Founder 2 email: nikita@sahukar.example.in
+Founder 2 phone: +91 90000 10402
+Founder 2 LinkedIn: https://www.linkedin.com/in/nikita-agarwal-ua
+Founder 2 role: COO
+Founder 2 background: User acquisition manager at a mobile gaming app (2019-2024), managed ₹40 L a month in performance marketing.
+Traction: ₹3.2 Cr disbursed to 1,900 kirana borrowers since Feb 2026. Oct 2026 disbursals were ₹62 L. 30+ DPD on the book is 7.8%.
+Why now: UPI QR data now gives a daily cash-flow signal for almost every kirana, which lenders can underwrite against.
+Biggest risk: Our main risk is NBFC partner capacity. Credit losses sit on the NBFC's books; defaults are the partner's problem, we are a tech layer.
+How did you hear about us: Cold email from the fund's website

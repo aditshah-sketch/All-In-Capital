@@ -1,0 +1,27 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A03
+Submitted: 2026-11-05
+Company: Vyom Drones
+Website: https://vyomdrones.example.in
+City: Hyderabad
+One-liner: Autonomous inspection drones that find faults on high-voltage power lines using onboard AI.
+Sector: Deeptech
+Stage: Pre-seed
+First institutional round: Yes
+Round size: ₹3 Cr
+Pre-money valuation: ₹15 Cr
+Post-money valuation: ₹18 Cr
+Team size: 4
+Monthly revenue: Not shared
+Annual recurring revenue: Not applicable
+Customers: Not shared
+Founder 1 name: Karthik Vemula
+Founder 1 email: karthik@vyomdrones.example.in
+Founder 1 phone: +91 90000 10301
+Founder 1 LinkedIn: https://www.linkedin.com/in/karthik-vemula-uav
+Founder 1 role: Founder and CEO
+Founder 1 background: Software engineering intern at Google (3 months, 2019); project trainee at a state space applications centre (6 months, 2020); freelance drone software developer (2021-2025).
+Traction: We have built a working prototype that completed autonomous flights along a 2 km test line on a private farm. Our demo video has 1.2 L views and we have spoken to several utilities who were impressed.
+Why now: Drone rules have been liberalised and utilities are under pressure to reduce outages.
+Biggest risk: Building the right team quickly enough; our technology is ahead of what anyone else in India has.
+How did you hear about us: LinkedIn post by a partner

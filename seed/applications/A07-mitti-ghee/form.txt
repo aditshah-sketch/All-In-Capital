@@ -1,0 +1,33 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A07
+Submitted: 2026-11-12
+Company: Mitti Ghee
+Website: https://mittighee.example.in
+City: Ahmedabad
+One-liner: A D2C brand for A2 cow ghee and cold-pressed oils, sourced directly from 1,100 dairy and oilseed farmers in Gujarat.
+Sector: Consumer brand
+Stage: Seed
+First institutional round: Yes
+Round size: ₹6 Cr
+Pre-money valuation: ₹28 Cr
+Post-money valuation: ₹34 Cr
+Team size: 22
+Monthly revenue: ₹38 L
+Annual recurring revenue: Not applicable
+Customers: 46,000 customers
+Founder 1 name: Hetal Patel
+Founder 1 email: hetal@mittighee.example.in
+Founder 1 phone: +91 90000 10701
+Founder 1 LinkedIn: https://www.linkedin.com/in/hetal-patel-dairy
+Founder 1 role: CEO
+Founder 1 background: Procurement manager at a district dairy cooperative in Gujarat (2016-2022), managing milk collection from 300 villages; brand manager at a packaged foods company (2022-2023).
+Founder 2 name: Jignesh Desai
+Founder 2 email: jignesh@mittighee.example.in
+Founder 2 phone: +91 90000 10702
+Founder 2 LinkedIn: https://www.linkedin.com/in/jignesh-desai-supply
+Founder 2 role: COO
+Founder 2 background: Quality and procurement lead at the same dairy cooperative (2016-2022), ran testing labs and farmer payments; supply chain consultant to food brands (2022-2023).
+Traction: Monthly revenue grew from ₹21 L in Jan 2026 to ₹38 L in Oct 2026. Gross margin is 54% and contribution margin after marketing is 19%. M3 repeat is 37% to 41% across 2026 cohorts and rising.
+Why now: Urban buyers now pay a premium for traceable dairy fats, and adulteration scares have broken trust in loose ghee.
+Biggest risk: Milk procurement costs rise in summer; if we cannot pass on prices, gross margin could drop 4 to 5 points for a quarter.
+How did you hear about us: Referred by a consumer-brand founder in the All In Capital portfolio

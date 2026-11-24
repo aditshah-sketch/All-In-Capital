@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "fictional": true,
+  "written": {
+    "label": "What we say",
+    "summary": "Pre-seed and seed in India, often the first institutional cheque of $100K to $500K. Fintech, deeptech, consumer tech and consumer brands. Founder-market fit and why now. We avoid later stages, overpriced entries and pedigree-only bets.",
+    "in_thesis": ["Fintech", "Deeptech", "Consumer tech", "Consumer brand"],
+    "stretch": ["B2B SaaS", "Commerce infrastructure", "Rural credit"],
+    "outside": ["Healthcare", "Web3", "Crypto", "Real estate"]
+  },
+  "revealed": {
+    "label": "How we invest",
+    "rules": [
+      { "id": "R1", "text": "The founder owns the hardest risk." },
+      { "id": "R2", "text": "Customer groundwork before product." },
+      { "id": "R3", "text": "Consumer brands are judged on cohort repeat and margin fluency." },
+      { "id": "R4", "text": "A missing number lowers the score." },
+      { "id": "R5", "text": "The business must fit a pre-seed cheque's structure." },
+      { "id": "R6", "text": "No company whose existence depends on a favourable regulatory change." },
+      { "id": "R7", "text": "Score evidence, not pedigree." },
+      { "id": "R8", "text": "Defensiveness on weak spots is information." },
+      { "id": "R9", "text": "Founder behaviour beats the sector label." }
+    ]
+  },
+  "scheduling": {
+    "days": ["Tue", "Thu"],
+    "window_ist": ["14:00", "18:00"],
+    "minutes": 30,
+    "booking_hours_ist": ["10:00", "19:00"],
+    "deeptech_partner": "Aditya"
+  }
+}

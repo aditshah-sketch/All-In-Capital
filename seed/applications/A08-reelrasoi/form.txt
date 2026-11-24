@@ -1,0 +1,27 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A08
+Submitted: 2026-11-16
+Company: ReelRasoi
+Website: https://reelrasoi.example.in
+City: Delhi
+One-liner: A short-video recipe app where home cooks learn regional Indian dishes in 60-second reels.
+Sector: Consumer tech
+Stage: Pre-seed
+First institutional round: Yes
+Round size: ₹2 Cr
+Pre-money valuation: ₹14 Cr
+Post-money valuation: ₹16 Cr
+Team size: 5
+Monthly revenue: Not shared
+Annual recurring revenue: Not applicable
+Customers: Not shared
+Founder 1 name: Tanvi Malhotra
+Founder 1 email: tanvi@reelrasoi.example.in
+Founder 1 phone: +91 90000 10801
+Founder 1 LinkedIn: https://www.linkedin.com/in/tanvi-malhotra-food
+Founder 1 role: Founder and CEO
+Founder 1 background: Content lead at a digital media house (2018-2024), ran its food video vertical; independent food creator since 2020.
+Traction: 4.2 L app downloads, 1.1 L Instagram followers and 28 M views across platforms. Our reels regularly go viral and brands are reaching out to us.
+Why now: Short video has become how India discovers food, but there is no app built only for cooking.
+Biggest risk: Keeping up with content demand as we grow.
+How did you hear about us: Saw a partner's podcast episode

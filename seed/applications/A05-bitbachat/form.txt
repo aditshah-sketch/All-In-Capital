@@ -1,0 +1,33 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A05
+Submitted: 2026-11-09
+Company: BitBachat
+Website: https://bitbachat.example.in
+City: Mumbai
+One-liner: A crypto recurring-savings app that lets Indians build a small bitcoin and stablecoin habit from ₹500 a month.
+Sector: Crypto
+Stage: Seed
+First institutional round: Yes
+Round size: ₹10 Cr
+Pre-money valuation: ₹50 Cr
+Post-money valuation: ₹60 Cr
+Team size: 16
+Monthly revenue: ₹22 L
+Annual recurring revenue: Not applicable
+Customers: 85,000 users
+Founder 1 name: Farhan Merchant
+Founder 1 email: farhan@bitbachat.example.in
+Founder 1 phone: +91 90000 10501
+Founder 1 LinkedIn: https://www.linkedin.com/in/farhan-merchant-pm
+Founder 1 role: CEO
+Founder 1 background: Product manager for mutual-fund SIPs at a stockbroking app (2017-2022); head of product at a crypto exchange (2022-2024).
+Founder 2 name: Pooja Iyer
+Founder 2 email: pooja@bitbachat.example.in
+Founder 2 phone: +91 90000 10502
+Founder 2 LinkedIn: https://www.linkedin.com/in/pooja-iyer-quant
+Founder 2 role: CTO
+Founder 2 background: Quant developer at a proprietary trading firm (2016-2023); built order routing and risk systems.
+Traction: 85,000 registered users and 38,000 active monthly savers as of Oct 2026. Monthly revenue reached ₹22 L in Oct 2026, up from ₹9 L in Apr 2026.
+Why now: Young Indians want a small crypto allocation, and a lower VDA tax regime would unlock mainstream adoption.
+Biggest risk: Regulation. If the tax regime stays as it is, our users' ticket sizes stay small.
+How did you hear about us: Introduced by an angel investor

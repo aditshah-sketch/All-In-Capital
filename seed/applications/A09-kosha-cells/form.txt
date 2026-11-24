@@ -1,0 +1,33 @@
+FICTIONAL TEST DATA. All In Capital seed application. Not a real company.
+Application ID: A09
+Submitted: 2026-11-18
+Company: Kosha Cells
+Website: https://koshacells.example.in
+City: Chennai
+One-liner: Sodium-ion battery packs for e-rickshaws that cost less than lithium, tolerate Indian heat and use no imported lithium.
+Sector: Deeptech
+Stage: Pre-seed
+First institutional round: Yes
+Round size: ₹4 Cr
+Pre-money valuation: ₹18 Cr
+Post-money valuation: ₹22 Cr
+Team size: 6
+Monthly revenue: ₹0
+Annual recurring revenue: Not applicable
+Customers: 0 paying customers
+Founder 1 name: Lakshmi Raghavan
+Founder 1 email: lakshmi@koshacells.example.in
+Founder 1 phone: +91 90000 10901
+Founder 1 LinkedIn: https://www.linkedin.com/in/lakshmi-raghavan-cells
+Founder 1 role: CEO
+Founder 1 background: PhD in electrochemistry; research scientist at a national electrochemical research lab (2015-2020); cell R&D lead at an EV battery manufacturer (2020-2024). 9 years in battery R&D.
+Founder 2 name: Vignesh Subramaniam
+Founder 2 email: vignesh@koshacells.example.in
+Founder 2 phone: +91 90000 10902
+Founder 2 LinkedIn: https://www.linkedin.com/in/vignesh-subramaniam-bms
+Founder 2 role: CTO
+Founder 2 background: BMS engineer at a commercial-vehicle OEM (2017-2021); battery pack engineering lead at an energy storage startup (2021-2024). 7 years in battery R&D.
+Traction: Pre-revenue. 48 V lab packs have completed 1,500 cycles at 45 degrees C with 88% capacity retained. Signed LOIs from 2 e-rickshaw fleet operators for 200 pilot packs.
+Why now: Lithium price swings and import dependence are hurting e-rickshaw operators, and sodium-ion cell supply has matured enough to build packs locally.
+Biggest risk: Certification timing. AIS-156 and ARAI testing could take longer than 18 months, which would delay revenue.
+How did you hear about us: Introduced by an IIT incubator programme manager
