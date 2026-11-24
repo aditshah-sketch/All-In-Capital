@@ -6,7 +6,7 @@
 --   select setup_queue_cron('https://<your-app>.vercel.app');
 
 create extension if not exists pg_cron;
-create extension if not exists pg_net;
+create extension if not exists pg_net with schema extensions;
 create extension if not exists supabase_vault;
 
 -- Only the service role can check a token; the app calls this via RPC.
@@ -28,7 +28,7 @@ begin
   -- Token: created here, stored in Vault, never returned.
   select id into existing from vault.secrets where name = 'aic_cron_token';
   if existing is null then
-    perform vault.create_secret(encode(gen_random_bytes(32), 'hex'), 'aic_cron_token');
+    perform vault.create_secret(encode(extensions.gen_random_bytes(32), 'hex'), 'aic_cron_token');
   end if;
 
   select id into existing from vault.secrets where name = 'aic_app_url';

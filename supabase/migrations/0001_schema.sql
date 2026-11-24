@@ -4,9 +4,9 @@
 -- policies, and anon/authenticated have no grants. Only server code, holding
 -- the service-role key, reads or writes.
 
-create extension if not exists vector;
+create extension if not exists vector with schema extensions;
 create extension if not exists pgmq;
-create extension if not exists pgcrypto;
+create extension if not exists pgcrypto with schema extensions;
 
 -- ---------------------------------------------------------------------------
 -- Versioned config: thesis, rubric and prompts. Edits create new rows.
@@ -466,6 +466,7 @@ begin
     select p.oid::regprocedure as sig from pg_proc p
     join pg_namespace n on n.oid = p.pronamespace
     where n.nspname = 'public'
+      and not exists (select 1 from pg_depend d where d.objid = p.oid and d.deptype = 'e')
   loop
     execute format('revoke all on function %s from public, anon, authenticated', f.sig);
     execute format('grant execute on function %s to service_role', f.sig);
