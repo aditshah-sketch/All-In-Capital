@@ -13,15 +13,27 @@ type GeminiJson = {
   usage?: { prompt_tokens?: number; completion_tokens?: number; total_tokens?: number };
 };
 
+/** Gemini 3.x bills hidden "thinking" tokens as output but leaves them out of
+ *  completion_tokens; total_tokens includes them. Bill whichever is larger. */
+export function billedOutputTokens(u: GeminiJson["usage"]): number {
+  const prompt = u?.prompt_tokens ?? 0;
+  const completion = u?.completion_tokens ?? 0;
+  const total = u?.total_tokens ?? 0;
+  return Math.max(completion, total - prompt);
+}
+
 /** USD per 1M tokens: [input, output]. */
+// Checked Nov 2026. Google retired 2.5 for new keys. 3.5 Flash-Lite has no
+// published price yet, so it is charged at the Flash rate (cap errs safe).
 export const GEMINI_PRICES: Record<string, [number, number]> = {
+  "gemini-3.5-flash": [1.5, 9],
+  "gemini-3.5-flash-lite": [1.5, 9],
   "gemini-2.5-pro": [1.25, 10],
   "gemini-2.5-flash": [0.3, 2.5],
   "gemini-2.5-flash-lite": [0.1, 0.4],
-  "gemini-3-pro-preview": [2, 12],
   "gemini-embedding-001": [0.15, 0],
 };
-const WORST_CASE: [number, number] = [2, 12];
+const WORST_CASE: [number, number] = [4, 20];
 
 export function geminiCostUsd(model: string, promptTokens: number, completionTokens: number): number {
   const id = model.replace(/^models\//, "");
@@ -41,7 +53,12 @@ export function geminiSchema(schema: unknown): unknown {
   return out;
 }
 
-export function geminiProvider(apiKey: string, fetchFn: FetchFn = fetch, embedDims = 1536): Provider {
+export function geminiProvider(
+  apiKey: string,
+  fetchFn: FetchFn = fetch,
+  opts: { embedDims?: number; reasoningEffort?: "none" | "low" | "medium" | "high" } = {},
+): Provider {
+  const embedDims = opts.embedDims ?? 1536;
   const base = "https://generativelanguage.googleapis.com/v1beta/openai";
   const headers = { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` };
 
@@ -63,6 +80,7 @@ export function geminiProvider(apiKey: string, fetchFn: FetchFn = fetch, embedDi
         messages: req.messages,
         temperature: req.temperature,
         max_tokens: req.maxTokens,
+        ...(opts.reasoningEffort ? { reasoning_effort: opts.reasoningEffort } : {}),
         ...(req.jsonSchema
           ? {
               response_format: {
@@ -75,12 +93,13 @@ export function geminiProvider(apiKey: string, fetchFn: FetchFn = fetch, embedDi
       const text = json?.choices?.[0]?.message?.content;
       if (typeof text !== "string") throw new HttpError(502, "Gemini returned no message content");
       const promptTokens = json.usage?.prompt_tokens ?? 0;
-      const completionTokens = json.usage?.completion_tokens ?? 0;
+      const completionTokens = billedOutputTokens(json.usage);
       return { text, promptTokens, completionTokens, costUsd: geminiCostUsd(req.model, promptTokens, completionTokens) };
     },
     async embed(model, input) {
       const json = await post("/embeddings", { model, input, dimensions: embedDims });
-      const tokens = json.usage?.prompt_tokens ?? json.usage?.total_tokens ?? 0;
+      // Gemini's embeddings endpoint returns no usage; estimate ~4 chars a token.
+      const tokens = json.usage?.prompt_tokens ?? Math.ceil(input.join("").length / 4);
       return { vectors: (json.data ?? []).map((d) => d.embedding), tokens, costUsd: geminiCostUsd(model, tokens, 0) };
     },
   };

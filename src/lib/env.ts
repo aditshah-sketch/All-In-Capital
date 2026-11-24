@@ -19,8 +19,9 @@ const schema = z.object({
   GEMINI_API_KEY: z.string().optional(),
   OPENROUTER_API_KEY: z.string().optional(),
   PORTKEY_API_KEY: z.string().optional(),
-  MODEL_PRIMARY: z.string().default("gemini-2.5-flash"),
-  MODEL_FALLBACK: z.string().default("gemini-2.5-flash-lite"),
+  MODEL_PRIMARY: z.string().default("gemini-3.5-flash"),
+  MODEL_FALLBACK: z.string().default("gemini-3.5-flash-lite"),
+  GEMINI_REASONING: z.enum(["none", "low", "medium", "high"]).default("low"),
   EMBEDDING_MODEL: z.string().default("gemini-embedding-001"),
   DAILY_SPEND_CAP_USD: z.coerce.number().positive().default(3),
 

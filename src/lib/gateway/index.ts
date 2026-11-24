@@ -22,7 +22,7 @@ export function gateway(): Gateway {
   const e = env();
   let provider: Provider;
   if (e.MODEL_PROVIDER === "gemini") {
-    provider = geminiProvider(requireEnv("GEMINI_API_KEY"));
+    provider = geminiProvider(requireEnv("GEMINI_API_KEY"), fetch, { reasoningEffort: e.GEMINI_REASONING });
   } else {
     const openRouterKey = requireEnv("OPENROUTER_API_KEY");
     provider =
